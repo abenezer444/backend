@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 
 });
 app.get('/health', (req, res) => {
-    res.send("sever running fine");
+    res.send("sever running fine amf dhwtfgyj");
 });
 
 app.listen(3000, () => {
