@@ -20,7 +20,7 @@ app.get('/health', (req, res) => {
     res.send("server running fine");
 });
 app.post('/sum', (req, res) => {
-    const numbers = req.body.data;
+    const numbers = req.body;
     console.log(numbers)
 
 
