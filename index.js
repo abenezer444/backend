@@ -29,7 +29,7 @@ app.post('/sum', (req, res) => {
     }
 
     const sum = numbers.reduce((acc, num) => acc + num, 0);
-    res.send(sum);
+    res.send({ sum });
 });
 app.listen(3000, () => {
 
