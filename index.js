@@ -27,12 +27,8 @@ app.post('/sum', (req, res) => {
 
     console.log(keys);
 
-    if (keys.length > 0) {
-        return res.status(400).send({ error: 'Invalid input, expected an array of int32 numbers' });
-    }
 
-    const sum = numbers.reduce((acc, num) => acc + num, 0);
-    res.send(sum.toString());
+    return res.send(keys.length.toString())
 });
 app.listen(3000, () => {
 
