@@ -23,8 +23,11 @@ app.post('/sum', (req, res) => {
     const numbers = req.body;
     console.log(numbers)
 
+    const keys = Object.keys(numbers);
 
-    if (!numbers.every(isValidInt32)) {
+    console.log(keys);
+
+    if (keys.length > 0) {
         return res.status(400).send({ error: 'Invalid input, expected an array of int32 numbers' });
     }
 
