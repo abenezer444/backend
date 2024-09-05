@@ -22,6 +22,7 @@ app.get('/health', (req, res) => {
 app.post('/sum', (req, res) => {
     const numbers = req.body;
     console.log(numbers)
+    console.log(req)
 
     const keys = Object.keys(numbers);
 
